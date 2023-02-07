@@ -17,7 +17,7 @@ const ListRow = ({ expense }) => {
     (
       <ExpenseForm
       expense={expense}
-      setIsEditing={isEditing}
+      setIsEditing={setIsEditing}
       />
     )
     :

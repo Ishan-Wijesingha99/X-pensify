@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
-import { NewExpense } from "../services/expenses";
+import { DeleteExpense, EditExpense, NewExpense } from "../services/expenses";
 import { useDispatch } from "react-redux";
 
 
 
-export const ExpenseForm = () => {
+export const ExpenseForm = ({ expense, setIsEditing }) => {
 
   const descriptions = ['Groceries', 'Credit Card Payments', 'Student loans', 'Gas']
   const [amount, setAmount] = useState(0)
@@ -22,8 +22,21 @@ export const ExpenseForm = () => {
       NewExpense(dispatch, { description, amount })
     } else {
       // edit expense
+      EditExpense(dispatch, { id: expense.id, description, amount })
+      setIsEditing(false)
     }
   }
+
+  useEffect(() => {
+    
+    if(expense !== undefined) {
+      setIsNewExpense(false)
+      setAmount(expense.amount)
+    } else {
+      setIsNewExpense(true)
+    }
+
+  }, [expense])
 
   return (
   <Form onSubmit={formSubmit}>
@@ -58,15 +71,27 @@ export const ExpenseForm = () => {
           </Button>
           :
           <div>
-            <Button variant="danger">
+            <Button
+            variant="danger"
+            style={{ marginRight: '4px'}}
+            onClick={() => DeleteExpense(dispatch, expense)}
+            >
               Delete
             </Button>
 
-            <Button variant="success" type="submit">
+            <Button
+            variant="success"
+            type="submit"
+            style={{ marginRight: '4px'}}
+            >
               Save
             </Button>
 
-            <Button variant="default">
+            <Button
+            variant="default"
+            onClick={() => setIsEditing(false)}
+            style={{ marginRight: '4px'}}
+            >
               Cancel
             </Button>
           </div>

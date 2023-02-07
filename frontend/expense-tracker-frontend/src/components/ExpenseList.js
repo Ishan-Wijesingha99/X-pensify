@@ -1,29 +1,53 @@
 import React from "react";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GetExpenses } from "../services/expenses";
 import { Button, Row, Col} from 'react-bootstrap'
+import { ExpenseForm } from "./ExpenseForm";
+
 
 
 const ListRow = ({ expense }) => {
-  return <div>
-    <Row>
-      <Col>
-        {expense.description}
-      </Col>
 
-      <Col>
-        {expense.amount}
-      </Col>
+  const [isEditing, setIsEditing] = useState(false)
 
-      <Col>
-        <Button variant="warning">Edit</Button>
-      </Col>
-    </Row>
-    <hr />
-  </div>
+  return (
+    isEditing
+    ?
+    (
+      <ExpenseForm
+      expense={expense}
+      setIsEditing={isEditing}
+      />
+    )
+    :
+    (
+      <div>
+        <Row>
+          <Col>
+            {expense.description}
+          </Col>
+    
+          <Col>
+            ${expense.amount}
+          </Col>
+    
+          <Col>
+            <Button
+            variant="warning"
+            onClick={() => setIsEditing(!isEditing)}
+            >
+              Edit
+            </Button>
+          </Col>
+        </Row>
+
+        <hr />
+      </div>
+    )
+  )
+  
 }
-
 
 
 

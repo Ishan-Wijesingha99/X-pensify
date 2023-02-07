@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
+import { NewExpense } from "../services/expenses";
+import { useDispatch } from "react-redux";
 
 
 
@@ -10,11 +12,14 @@ export const ExpenseForm = () => {
   const [description, setDescription] = useState(descriptions[0])
   const [isNewExpense, setIsNewExpense] = useState(true)
 
+  const dispatch = useDispatch()
+
   const formSubmit = event => {
     event.preventDefault()
 
     if(isNewExpense) {
       // create new expense
+      NewExpense(dispatch, { description, amount })
     } else {
       // edit expense
     }

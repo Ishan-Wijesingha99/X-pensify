@@ -1,8 +1,14 @@
 // this file is responsible for making the http requests to the database, all CRUD
 
-export const GetExpenses = async dispatch => {
+import { ActionCreators } from "../app/expensesReducer"
+
+
+
+
+
+export const GetExpenses = async (dispatch) => {
   try {
-    
+
     // make API call
     const expenses = [
       {
@@ -26,6 +32,8 @@ export const GetExpenses = async dispatch => {
         amount: 210.00
       },
     ]
+
+    dispatch(ActionCreators.setExpenses(expenses))
 
   } catch (error) {
     console.log(error)

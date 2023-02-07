@@ -1,8 +1,16 @@
 import React from "react";
+import { ExpenseList } from "./components/ExpenseList";
 
-function App() {
+
+const App = () => {
   return (
-    <p>Yooo</p>
+    <div style={
+      {width: '60%', margin: 'auto'}
+    }
+    >
+      <h3>Your Expenses</h3>
+      <ExpenseList />
+    </div>
   )
 }
 

@@ -41,6 +41,14 @@ namespace Expenses.WebApi
                 settings.Title = "Expenses";
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("ExpensesPolicy", builder => 
+                {
+                    builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +62,8 @@ namespace Expenses.WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("ExpensesPolicy");
 
             app.UseAuthorization();
 

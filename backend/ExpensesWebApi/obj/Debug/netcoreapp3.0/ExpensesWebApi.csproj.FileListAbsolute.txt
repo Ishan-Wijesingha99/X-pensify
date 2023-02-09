@@ -62,3 +62,5 @@ C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.csproj.CopyComplete
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.dll
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.pdb
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Expenses.Core.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Expenses.Core.pdb

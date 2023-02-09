@@ -1,0 +1,12 @@
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\bin\Debug\netcoreapp3.0\Expenses.Core.deps.json
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\bin\Debug\netcoreapp3.0\Expenses.Core.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\bin\Debug\netcoreapp3.0\Expenses.Core.pdb
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\bin\Debug\netcoreapp3.0\Expenses.DB.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\bin\Debug\netcoreapp3.0\Expenses.DB.pdb
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.csproj.AssemblyReference.cache
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.AssemblyInfoInputs.cache
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.AssemblyInfo.cs
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.csproj.CopyComplete
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.pdb

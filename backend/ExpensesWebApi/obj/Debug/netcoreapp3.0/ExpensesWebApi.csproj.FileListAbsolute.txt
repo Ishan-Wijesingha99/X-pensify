@@ -64,3 +64,15 @@ C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.pdb
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Expenses.Core.dll
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Expenses.Core.pdb
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Namotion.Reflection.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NJsonSchema.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.Annotations.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.AspNetCore.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.Core.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.Generation.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.Generation.AspNetCore.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.MvcApplicationPartsAssemblyInfo.cs

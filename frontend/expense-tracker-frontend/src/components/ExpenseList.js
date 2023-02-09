@@ -55,7 +55,7 @@ export const ExpenseList = () => {
   // useSelector is used to read things in the global store (get), useDispatch is used to change the store (set) 
 
   const dispatch = useDispatch()
-  const expensesArray = useSelector(state => state.expensesReducer.expenses)
+  const expensesArray = useSelector(state => state.expensesSlice.expenses)
 
   console.log(expensesArray)
 

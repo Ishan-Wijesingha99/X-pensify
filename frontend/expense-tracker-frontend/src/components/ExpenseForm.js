@@ -19,10 +19,10 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
 
     if(isNewExpense) {
       // create new expense
-      NewExpense(dispatch, { description, amount })
+      NewExpense(dispatch, { description, amount: Number(amount) })
     } else {
       // edit expense
-      EditExpense(dispatch, { id: expense.id, description, amount })
+      EditExpense(dispatch, { id: expense.id, description, amount: Number(amount) })
       setIsEditing(false)
     }
   }

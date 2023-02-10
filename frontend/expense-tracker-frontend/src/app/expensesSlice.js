@@ -1,4 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAction } from "@reduxjs/toolkit";
+
+export const setExpensesError = createAction("setExpenseError")
+export const newExpenseError = createAction("newExpenseError")
+export const editExpenseError = createAction("editExpenseError")
+export const deleteExpenseError = createAction("deleteExpenseError")
 
 export const expensesSlice = createSlice({
   name: "expenses",

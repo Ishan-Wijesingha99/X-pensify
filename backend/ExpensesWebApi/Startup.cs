@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Expenses.Core;
 using Expenses.DB;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,6 +36,10 @@ namespace Expenses.WebApi
             services.AddDbContext<AppDbContext>();
 
             services.AddTransient<IExpensesServices, ExpensesServices>();
+
+            services.AddTransient<IUserService, UserService>();
+
+            services.AddTransient<IPasswordHasher, PasswordHasher>();
 
             services.AddSwaggerDocument(settings =>
             {

@@ -20,6 +20,27 @@ namespace Expenses.Core
             _passwordHasher = passwordHasher;
         }
 
+
+
+        // sign in method
+        public async Task<AuthenticatedUser> SignIn(User user)
+        {
+            var currentUser = await _context.Users.FirstOrDefaultAsync(u => u.Username == user.Username);
+
+            if(currentUser == null || _passwordHasher.VerifyHashedPassword(currentUser.Password, user.Password) == PasswordVerificationResult.Failed)
+            {
+                throw new InvalidUsernamePasswordException("Invalid password or username");
+            }
+
+            // if you get to this point in the code, the password and username given by the user is fine, therfore return an AuthenticatedUser
+            return new AuthenticatedUser
+            {
+                Username = user.Username,
+                Token = "test token"
+            };
+        }
+
+        // sign up method
         public async Task<AuthenticatedUser> SignUp(User user)
         {
             // check if username already exists when signing up a user

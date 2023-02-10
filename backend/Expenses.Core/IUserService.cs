@@ -8,6 +8,11 @@ namespace Expenses.Core
 {
     public interface IUserService
     {
+        // sign up
         Task<AuthenticatedUser> SignUp(User user);
+
+        // sign in
+        Task<AuthenticatedUser> SignIn(User user);
+
     }
 }

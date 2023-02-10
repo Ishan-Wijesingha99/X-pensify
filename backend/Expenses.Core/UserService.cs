@@ -1,5 +1,6 @@
 ﻿using Expenses.Core.CustomExceptions;
 using Expenses.Core.DTO;
+using Expenses.Core.Utilities;
 using Expenses.DB;
 using Microsoft.AspNet.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,6 @@ namespace Expenses.Core
         }
 
 
-
         // sign in method
         public async Task<AuthenticatedUser> SignIn(User user)
         {
@@ -36,7 +36,7 @@ namespace Expenses.Core
             return new AuthenticatedUser
             {
                 Username = user.Username,
-                Token = "test token"
+                Token = JWTGenerator.GenerateUserToken(user.Username)
             };
         }
 
@@ -63,7 +63,7 @@ namespace Expenses.Core
             return new AuthenticatedUser
             {
                 Username = user.Username,
-                Token = "test token"
+                Token = JWTGenerator.GenerateUserToken(user.Username)
             };
 
         }

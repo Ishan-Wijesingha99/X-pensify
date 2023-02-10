@@ -8,7 +8,7 @@ namespace Expenses.Core
     {
         private AppDbContext _context;
 
-        public ExpensesServices(AppDbContext context)
+        public ExpensesServices(AppDbContext context, IHttpContextAccessor )
         {
             _context = context;
         }

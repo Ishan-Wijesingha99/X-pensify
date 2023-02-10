@@ -77,3 +77,4 @@ C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\NSwag.Generation.AspNetCore.dll
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

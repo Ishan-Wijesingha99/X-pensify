@@ -26,6 +26,7 @@
         "dependencies": {
           "Expenses.Core": "1.0.0",
           "Expenses.DB": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.3",
           "Microsoft.EntityFrameworkCore.Design": "3.1.9",
           "NSwag.AspNetCore": "13.8.2",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -312,6 +313,20 @@
         },
         "compile": {
           "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.0.3": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.320.7303"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/1.0.3": {
@@ -3660,6 +3675,13 @@
       "sha512": "sha512-Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
       "path": "microsoft.aspnet.identity.core/2.2.3",
       "hashPath": "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3agHVU8W52KaXVkfGuaftc8OGnyiH4Xqanaqwx/RugdraDvT4KGt9MgFOF7selwon5iP4Cs++Mj4ynpYUy7fEQ==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.0.3",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/1.0.3": {
       "type": "package",

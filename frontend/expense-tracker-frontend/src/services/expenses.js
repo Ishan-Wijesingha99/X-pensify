@@ -5,7 +5,7 @@ import axios from "axios"
 
 
 const axiosInstance = axios.create({
-  baseURL: `${process.env.BASE_URL}/Expenses`
+  baseURL: `https://localhost:44397/Expenses`
 })
 
 

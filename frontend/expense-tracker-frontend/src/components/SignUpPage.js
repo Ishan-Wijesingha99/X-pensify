@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Form, FormControl, InputGroup, Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { SignIn } from "../services/authentication";
+import { SignUp } from "../services/authentication";
 
 
 
-const SignInPage = () => {
+const SignUpPage = () => {
   const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
 
   const dispatch = useDispatch()
 
@@ -16,11 +18,11 @@ const SignInPage = () => {
   const submitFunction = event => {
     event.preventDefault()
 
-    SignIn(dispatch, {
+    SignUp(dispatch, {
       id: 0,
       username: username,
       password: password,
-      email: "string"
+      email: email
     })
   }
 
@@ -42,9 +44,24 @@ const SignInPage = () => {
 
         <InputGroup className="mb-3">
           <FormControl
+          placeholder="Email"
+          onChange={event => setEmail(event.target.value)}
+          ></FormControl>
+        </InputGroup>
+
+        <InputGroup className="mb-3">
+          <FormControl
           placeholder="Password"
           type="password"
           onChange={event => setPassword(event.target.value)}
+          ></FormControl>
+        </InputGroup>
+
+        <InputGroup className="mb-3">
+          <FormControl
+          placeholder="Confirm Password"
+          type="password"
+          onChange={event => setConfirmPassword(event.target.value)}
           ></FormControl>
         </InputGroup>
 
@@ -52,9 +69,9 @@ const SignInPage = () => {
         type="submit"
         variant="success"
         style={{ margin: "auto", display: "block", width: "10rem"}}
-        disabled={ password.length <= 0 || username <= 0 }
+        disabled={ password !== confirmPassword || password.length <= 0 || confirmPassword <= 0 || username <= 0 || email <= 0 }
         >
-          Sign In
+          Sign Up
         </Button>
 
       </Form>
@@ -62,4 +79,4 @@ const SignInPage = () => {
   )
 }
 
-export default SignInPage
+export default SignUpPage

@@ -3,9 +3,9 @@ import { userAuthenticated } from "../app/authenticationSlice"
 
 
 
-const axiosInstance = {
-  baseURL: `${process.env.BASE_URL}/Authentication`
-}
+const axiosInstance = axios.create({
+  baseURL: `https://localhost:44397/Authentication`
+})
 
 
 

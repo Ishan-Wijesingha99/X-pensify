@@ -1,18 +1,25 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import { ExpenseForm } from "./ExpenseForm";
+import { ExpenseList } from "./ExpenseList";
 
 
+const HomePage = () => {
+  return (
+    <div style={{width: '60%', margin: 'auto'}}>
 
-// <div style={{width: '60%', margin: 'auto'}}
-    // >
+      <ToastContainer />
 
-    //   <ToastContainer />
+      <h3>New Expenses</h3>
+      <ExpenseForm />
 
-    //   <h3>New Expenses</h3>
-    //   <ExpenseForm />
+      <hr style={{ border: '1px solid grey' }}/>
 
-    //   <hr style={{ border: '1px solid grey' }}/>
+      <h3>Your Expenses</h3>
+      <ExpenseList />
 
-    //   <h3>Your Expenses</h3>
-    //   <ExpenseList />
+    </div>
+  )
+}
 
-    // </div>
+export default HomePage

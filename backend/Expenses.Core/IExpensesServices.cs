@@ -1,4 +1,4 @@
-﻿using Expenses.DB;
+﻿using Expenses.Core.DTO;
 using System.Collections.Generic;
 
 
@@ -14,7 +14,7 @@ namespace Expenses.Core
         Expense GetExpense(int id);
 
         // creating an expense, POST
-        Expense CreateExpense(Expense expense);
+        Expense CreateExpense(DB.Expense expense);
 
         // deleting an expense, POST
         void DeleteExpense(Expense expense);

@@ -1,5 +1,5 @@
 ﻿using Expenses.Core;
-using Expenses.DB;
+using Expenses.Core.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -37,7 +37,7 @@ namespace ExpensesWebApi.Controllers
 
         // create an expense
         [HttpPost]
-        public IActionResult CreateExpense(Expense expense)
+        public IActionResult CreateExpense(Expenses.DB.Expense expense)
         {
             // Cannot use Ok() because it's used for 200 HTTP response, if we add something to the database successfully, that would be a 201 HTTP response
             var newExpense = _expensesServices.CreateExpense(expense);

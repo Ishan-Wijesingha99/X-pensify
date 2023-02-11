@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -41,6 +42,8 @@ namespace Expenses.WebApi
             services.AddTransient<IUserService, UserService>();
 
             services.AddTransient<IPasswordHasher, PasswordHasher>();
+
+            services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddSwaggerDocument(settings =>
             {

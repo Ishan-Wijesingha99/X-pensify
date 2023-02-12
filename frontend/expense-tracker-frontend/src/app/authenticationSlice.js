@@ -13,7 +13,7 @@ export const authenticationSlice = createSlice({
       return { ...state, ...{ token: action.payload.token, isLoggedIn: true } }
     },
     logout: () => {
-      sessionStorage.removeItem("token")
+      sessionStorage.clear("token")
     }
   }
 })

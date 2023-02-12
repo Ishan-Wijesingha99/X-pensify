@@ -47,7 +47,7 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
         as="select"
         onChange={event => setDescription(event.target.value)}
         >
-          {descriptions.map(singleDesc => <option>{singleDesc}</option>)}
+          {descriptions.map((singleDesc, i) => <option key={i}>{singleDesc}</option>)}
         </Form.Control>
       </Col>
 

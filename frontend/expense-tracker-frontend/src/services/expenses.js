@@ -8,6 +8,11 @@ const axiosInstance = axios.create({
   baseURL: `https://localhost:44397/Expenses`
 })
 
+// for all these http request, you need to send the token with it or the backend won't be able to process it, so do this
+axiosInstance.interceptors.request.use(config => {
+  config.headers = { authorization: `Bearer ${sessionStorage.getItem("token")}`}
+  return config
+})
 
 
 export const GetExpenses = async (dispatch) => {

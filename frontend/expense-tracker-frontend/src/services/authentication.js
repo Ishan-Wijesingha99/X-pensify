@@ -4,7 +4,7 @@ import { userAuthenticated } from "../app/authenticationSlice"
 
 
 const axiosInstance = axios.create({
-  baseURL: `https://localhost:44397/Authentication`
+  baseURL: `https://api-expense-tracker.azurewebsites.net/Authentication`
 })
 
 

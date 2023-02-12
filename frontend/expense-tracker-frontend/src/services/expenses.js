@@ -5,7 +5,7 @@ import axios from "axios"
 
 
 const axiosInstance = axios.create({
-  baseURL: `https://localhost:44397/Expenses`
+  baseURL: `https://api-expense-tracker.azurewebsites.net/Expenses`
 })
 
 // for all these http request, you need to send the token with it or the backend won't be able to process it, so do this

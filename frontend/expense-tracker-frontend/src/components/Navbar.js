@@ -20,7 +20,7 @@ const Navbar = () => {
         isLoggedIn
         ?
         <Button 
-        variant="link" href="/signin"
+        variant="link" href="/"
         onClick={ () => dispatch(logout()) }>
           Log out
         </Button>

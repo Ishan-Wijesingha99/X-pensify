@@ -10,3 +10,4 @@ C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.csproj.CopyComplete
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.dll
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.pdb
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expenses.Core\obj\Debug\netcoreapp3.0\Expenses.Core.GeneratedMSBuildEditorConfig.editorconfig

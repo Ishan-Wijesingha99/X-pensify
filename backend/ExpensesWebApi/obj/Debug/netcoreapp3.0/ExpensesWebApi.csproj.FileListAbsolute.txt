@@ -1,13 +1,11 @@
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.csproj.AssemblyReference.cache
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\ExpensesWebApi.StaticWebAssets.Manifest.cache
-C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\ExpensesWebApi.StaticWebAssets.xml
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.csproj.CoreCompileInputs.cache
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.AssemblyInfoInputs.cache
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.AssemblyInfo.cs
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\appsettings.json
-C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\ExpensesWebApi.exe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\ExpensesWebApi.deps.json
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\ExpensesWebApi.runtimeconfig.json
@@ -78,3 +76,11 @@ C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\Expe
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\bin\Debug\netcoreapp3.0\ExpensesWebApi.StaticWebAssets.xml
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\ExpensesWebApi.StaticWebAssets.Pack.cache
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.ExpensesWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.build.ExpensesWebApi.props
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildMultiTargeting.ExpensesWebApi.props
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\staticwebassets\msbuild.buildTransitive.ExpensesWebApi.props
+C:\Users\Ishan\Desktop\C# - .NET - ASP.NET CORE MVC\Expense-Tracker\backend\ExpensesWebApi\obj\Debug\netcoreapp3.0\ExpensesWebApi.genruntimeconfig.cache

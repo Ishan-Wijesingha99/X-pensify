@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/expenses-db-server/databases/ExpensesDB",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DB_CONNECTION_STRING",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

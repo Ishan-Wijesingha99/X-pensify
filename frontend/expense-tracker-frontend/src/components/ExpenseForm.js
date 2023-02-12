@@ -7,7 +7,8 @@ import { useDispatch } from "react-redux";
 
 export const ExpenseForm = ({ expense, setIsEditing }) => {
 
-  const descriptions = ['Groceries', 'Credit Card Payments', 'Student loans', 'Gas']
+  const descriptions = ['Rent', 'Mortgage', 'Transport', 'Food', 'Utilities', 'Insurance', 'Medical/Healthcare', 'Investments', 'Debt Payments', 'Gifts', 'Memberships/Subscriptions', 'Recreation/Entertainment', 'Miscellaneous', 'Grooming/Self-care', 'Fuel', 'Education', 'Pets', 'Retirement Contributions', 'Clothing', 'Household Supplies/Items', 'Charity']
+
   const [amount, setAmount] = useState(0)
   const [description, setDescription] = useState(descriptions[0])
   const [isNewExpense, setIsNewExpense] = useState(true)

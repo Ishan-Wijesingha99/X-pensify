@@ -1,12 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
 import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { userAuthenticated } from "./app/authenticationSlice";
+import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import SignInPage from "./components/SignInPage";
 import SignUpPage from "./components/SignUpPage";
+import StatisticsPage from "./components/StatisticsPage";
 
 
 
@@ -29,8 +30,9 @@ const App = () => {
 
       <Switch>
         <Route exact path="/" render={() => (isLoggedIn ? <HomePage /> : <SignInPage />)} />
-        <Route exact path="/signup" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignUpPage />)} />
-        <Route exact path="/signin" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignInPage />)} />
+        <Route path="/signup" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignUpPage />)} />
+        <Route path="/signin" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignInPage />)} />
+        <Route path="/statistics" render={() => (isLoggedIn ? <StatisticsPage /> : <SignInPage />)} />
         <Route render={() => <h2>Page not found</h2>} />
       </Switch>
     </BrowserRouter>

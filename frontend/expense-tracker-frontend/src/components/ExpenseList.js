@@ -57,8 +57,6 @@ export const ExpenseList = () => {
   const dispatch = useDispatch()
   const expensesArray = useSelector(state => state.expensesSlice.expenses)
 
-  console.log(expensesArray)
-
   useEffect(() => {
     GetExpenses(dispatch)
   }, [])

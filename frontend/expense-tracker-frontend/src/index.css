@@ -50,7 +50,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #4b82d4 !important;
+  background-color: #3c66a5 !important;
 }
 
 .homepage-title {
@@ -86,7 +86,7 @@ body {
 }
 
 .sign-in-button:hover, .sign-up-button:hover {
-  background-color: #4b82d4 !important;
+  background-color: #3c66a5 !important;
 }
 
 /* statistics page */

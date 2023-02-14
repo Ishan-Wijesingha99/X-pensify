@@ -17,6 +17,7 @@ export const SignUp = async (dispatch, credentials) => {
     dispatch(userAuthenticated(data))
   } catch (error) {
     console.log(error)
+    return "Username already exists"
   }
 }
 
@@ -28,5 +29,6 @@ export const SignIn = async (dispatch, credentials) => {
     dispatch(userAuthenticated(data))
   } catch (error) {
     console.log(error)
+    return "Username and/or password incorrect"
   }
 }

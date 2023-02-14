@@ -11,7 +11,9 @@ const SignUpPage = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("yeet")
   const [confirmPassword, setConfirmPassword] = useState("")
+
   const [passwordsNotMatching, setPasswordsNotMatching] = useState(false)
+  const [usernameAlreadyExists, setUsernameAlreadyExists] = useState(false)
 
   const dispatch = useDispatch()
 
@@ -22,12 +24,20 @@ const SignUpPage = () => {
     if(password !== confirmPassword) {
       setPasswordsNotMatching(true)
     } else {
+      
       SignUp(dispatch, {
         id: 0,
         username: username,
         password: password,
         email: email
+      }).then(res => {
+        if(res === "Username already exists") {
+          setUsernameAlreadyExists(true)
+        } else {
+          setUsernameAlreadyExists(false)
+        }
       })
+
     }
   }
 
@@ -103,6 +113,8 @@ const SignUpPage = () => {
         >
           Sign Up
         </Button>
+
+        {usernameAlreadyExists && (<p>Username already exists</p>)}
 
       </Form>
     </div>

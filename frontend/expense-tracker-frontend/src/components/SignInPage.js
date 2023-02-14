@@ -8,6 +8,7 @@ import { SignIn } from "../services/authentication";
 const SignInPage = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+  const [incorrectCredentials, setIncorrectCredentials] = useState(false)
 
   const dispatch = useDispatch()
 
@@ -19,6 +20,12 @@ const SignInPage = () => {
       username: username,
       password: password,
       email: "string"
+    }).then(res => {
+      if(res === "Username and/or password incorrect") {
+        setIncorrectCredentials(true)
+      } else {
+        setIncorrectCredentials(false)
+      }
     })
   }
 
@@ -57,6 +64,8 @@ const SignInPage = () => {
         >
           Sign In
         </Button>
+
+        {incorrectCredentials && (<p>Username and/or password incorrect</p>)}
 
       </Form>
     </div>

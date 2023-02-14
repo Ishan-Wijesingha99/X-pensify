@@ -29,36 +29,40 @@ const SignUpPage = () => {
   return (
     <div>
       <Form
-      style={{ width: "30rem", margin: "auto", paddingTop: "8px" }}
+      className="sign-form"
       onSubmit={submitFunction}
       >
 
-        <h4 style={{ textAlign: 'center' }}>Welcome back!</h4>
+        <h4 className="create-an-account">Create an Account to Use X-pensify!</h4>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Username"
           onChange={event => setUsername(event.target.value)}
           ></FormControl>
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Email"
           onChange={event => setEmail(event.target.value)}
           ></FormControl>
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Password"
           type="password"
           onChange={event => setPassword(event.target.value)}
           ></FormControl>
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Confirm Password"
           type="password"
           onChange={event => setConfirmPassword(event.target.value)}
@@ -66,8 +70,8 @@ const SignUpPage = () => {
         </InputGroup>
 
         <Button
+        className="sign-up-button"
         type="submit"
-        variant="success"
         style={{ margin: "auto", display: "block", width: "10rem"}}
         disabled={ password !== confirmPassword || password.length <= 0 || confirmPassword <= 0 || username <= 0 || email <= 0 }
         >

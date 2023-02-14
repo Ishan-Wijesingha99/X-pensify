@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
+/* general css */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   color: rgb(221, 221, 221) !important;
 }
 
+/* navbar */
 .navcss {
   background-color: rgb(66, 119, 199);
   padding: 0.8rem !important;
@@ -41,10 +44,77 @@ body {
   transition: 200ms;
 }
 
+/* home page */
 .submit-button {
   background-color: rgb(66, 119, 199) !important;
+}
+
+.submit-button:hover {
+  background-color: #4b82d4 !important;
 }
 
 .homepage-title {
   margin-bottom: 1rem;
 }
+
+.sign-form {
+  width: 30rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* sign in page and sign up page */
+.sign-in-to-continue, .create-an-account {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sign-in-to-continue {
+  font-size: 1.8rem;
+}
+
+.create-an-account {
+  font-size: 1.6rem;
+}
+
+.form-input-class {
+  background-color: rgb(221, 221, 221) !important;
+}
+
+.sign-in-button, .sign-up-button {
+  background-color: rgb(66, 119, 199) !important;
+}
+
+.sign-in-button:hover, .sign-up-button:hover {
+  background-color: #4b82d4 !important;
+}
+
+/* statistics page */
+.stats-page-div {
+  max-width: 35rem;
+  max-height: 35rem;
+  margin: auto;
+  text-align: center;
+}
+
+.stats-page-title {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.legend {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+
+
+

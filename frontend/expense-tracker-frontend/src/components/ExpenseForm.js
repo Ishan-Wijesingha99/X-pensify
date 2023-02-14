@@ -70,7 +70,7 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
           {
             isNewExpense
             ?
-            <Button className="submit-button" variant="primary" type="submit">
+            <Button className="submit-button" type="submit">
               Add
             </Button>
             :

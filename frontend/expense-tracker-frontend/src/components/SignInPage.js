@@ -25,21 +25,23 @@ const SignInPage = () => {
   return (
     <div>
       <Form
-      style={{ width: "30rem", margin: "auto", paddingTop: "8px" }}
+      className="sign-form"
       onSubmit={submitFunction}
       >
 
-        <h4 style={{ textAlign: 'center' }}>Sign In to Continue!</h4>
+        <h4 className="sign-in-to-continue">Sign In to Continue!</h4>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Username"
           onChange={event => setUsername(event.target.value)}
           ></FormControl>
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-4">
           <FormControl
+          className="form-input-class"
           placeholder="Password"
           type="password"
           onChange={event => setPassword(event.target.value)}
@@ -47,8 +49,8 @@ const SignInPage = () => {
         </InputGroup>
 
         <Button
+        className="sign-in-button"
         type="submit"
-        variant="success"
         style={{ margin: "auto", display: "block", width: "10rem"}}
         disabled={ password.length <= 0 || username <= 0 }
         >

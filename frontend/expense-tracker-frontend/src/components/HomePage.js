@@ -12,7 +12,7 @@ const HomePage = () => {
 
       <ExpenseForm />
 
-      <hr style={{ border: '1px solid grey' }}/>
+      <hr style={{ border: '1px solid grey', marginBottom: '3rem' }}/>
 
       <ExpenseList />
 

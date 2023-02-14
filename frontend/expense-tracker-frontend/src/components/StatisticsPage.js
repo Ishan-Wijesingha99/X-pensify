@@ -79,25 +79,34 @@ const StatisticsPage = () => {
 
   return (
     <>
-      <div style={{ maxWidth: "35rem", maxHeight: "35rem", margin: "auto", textAlign: "center" }}>
+      <div className="stats-page-div">
         
-        <h4 style={{ marginTop: "10px" }}>Expenses per Category</h4>
+        <h4 className="stats-page-title">Expenses Pie Chart</h4>
 
         {/* the pie chart */}
         <VictoryPie 
         colorScale={["#E8421F", "#2136FF", "#5DE71A", "#FCE313", "#e112e5", "#A016EB", "#FF8D39", "#ec9e93", "#c8d281", "#00EEFF", "#cf1357", "#4BA122", "#828585", "#771b1e", "#9DF2B0", "#22DFCA", "#1a8b70", "#F423C5", "#a6680c", "#8B94EB", "#856D13"]}
         data={pieData}
+        style={{
+          data: {
+            strokeWidth: 1,
+            stroke: "rgb(221, 221, 221)"
+          },
+          labels: {
+            fill: "rgb(221, 221, 221)"
+          }
+        }}
         />
 
       </div>
 
       {/* the legend */}
-      <div style={{ display: "flex", alignItems: 'center', justifyContent: 'center', textAlign: 'center', fontSize: '12px', marginRight: 'auto', marginLeft: 'auto'}}>
+      <div className="legend">
           {
             legendData.map((object, i) => {
               return (
                 <div style={{ display: 'flex' }} key={i}>
-                  <p style={{ marginRight: '20px' }}>{object.number}: {object.caption}</p>
+                  <p style={{ marginRight: '1rem', marginLeft: '1rem' }}>{object.number}: {object.caption}</p>
                 </div>
               )
             })

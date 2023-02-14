@@ -85,7 +85,7 @@ const StatisticsPage = () => {
 
         {/* the pie chart */}
         <VictoryPie 
-        colorScale={["#cf1357", "#fc911d", "#1a8b70", "#39a035", "#a6680c", "#bd280c", "#05c58c", "#fe546b", "#771b1e", "#c8d281", "#98875f", "#e112e5", "#ec9e93", "#dee51c", "#210099", "#7b7def", "#2ce5d2", "#3a016b", "#170c18", "#5a8694", "#808080"]}
+        colorScale={["#E8421F", "#2136FF", "#5DE71A", "#FCE313", "#e112e5", "#A016EB", "#FF8D39", "#ec9e93", "#c8d281", "#00EEFF", "#cf1357", "#4BA122", "#828585", "#771b1e", "#9DF2B0", "#22DFCA", "#1a8b70", "#F423C5", "#a6680c", "#8B94EB", "#856D13"]}
         data={pieData}
         />
 

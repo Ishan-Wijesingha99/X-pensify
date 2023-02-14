@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #181823 !important;
+  color: rgb(221, 221, 221) !important;
+}
+
+.navcss {
+  background-color: rgb(66, 119, 199);
+  padding: 0.8rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.nav-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #181823 !important;
+}
+
+.nav-links-div {
+  display: flex;
+  align-items: center;
+}
+
+.single-nav-link {
+  background-color: #181823 !important;
+  margin-left: 0.8rem !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 0.375rem !important;
+  text-decoration: none !important;
+  color: rgb(66, 119, 199) !important;
+}
+
+.single-nav-link:hover {
+  scale: 1.1;
+  transition: 200ms;
+}
+
+.submit-button {
+  background-color: rgb(66, 119, 199) !important;
+}
+
+.homepage-title {
+  margin-bottom: 1rem;
+}

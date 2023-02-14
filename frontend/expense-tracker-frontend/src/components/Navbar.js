@@ -12,17 +12,17 @@ const Navbar = () => {
   const dispatch = useDispatch()
 
   return (
-    <Nav className="navbar" style={{ backgroundColor: "#E4FFF2", padding: "0.8rem" }}>
+    <Nav className="navbar navcss">
       
-      <h1 style={{ fontFamily: "Brush Script MT, cursive" }}>My Expenses</h1>
+      <h1 className="nav-title">X-pensify</h1>
 
       {
         isLoggedIn
         ?
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="nav-links-div">
 
           <NavLink
-          style={{ marginLeft: "1rem" }} 
+          className="single-nav-link"
           variant="link"
           to="/"
           >
@@ -30,15 +30,17 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-          style={{ marginLeft: "1rem" }} 
+          className="single-nav-link"
           variant="link"
           to="/statistics"
           >
             Statistics
           </NavLink>
           
-          <Button 
-          variant="link" href="/"
+          <Button
+          className="single-nav-link"
+          variant="link"
+          href="/"
           onClick={ () => dispatch(logout()) }>
             Log out
           </Button>
@@ -48,14 +50,15 @@ const Navbar = () => {
         :
         <div style={{ display: "flex" }}>
           <NavLink
+          className="single-nav-link"
           to="/signup"
           >
             Sign Up
           </NavLink>
 
           <NavLink
+          className="single-nav-link"
           to="/signin"
-          style={{ marginLeft: "1rem" }}
           >
             Sign In
           </NavLink>

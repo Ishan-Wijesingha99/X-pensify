@@ -62,11 +62,15 @@ export const ExpenseList = () => {
   }, [])
 
   return (
-    expensesArray.map(object => (
-      <div key={object.id} className="mb-4">
-        <ListRow expense={object} />
-      </div>
-    ))
+    <>
+      <h2>Your Expenses</h2>
+
+      {expensesArray.map(object => (
+        <div key={object.id} className="mb-4">
+          <ListRow expense={object} />
+        </div>
+      ))}
+    </>
   )
 
 }

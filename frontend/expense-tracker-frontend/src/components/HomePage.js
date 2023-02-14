@@ -10,12 +10,10 @@ const HomePage = () => {
 
       <ToastContainer />
 
-      <h3>New Expenses</h3>
       <ExpenseForm />
 
       <hr style={{ border: '1px solid grey' }}/>
 
-      <h3>Your Expenses</h3>
       <ExpenseList />
 
     </div>

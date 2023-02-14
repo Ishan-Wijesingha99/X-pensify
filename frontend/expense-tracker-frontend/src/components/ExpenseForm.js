@@ -40,65 +40,69 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
   }, [expense])
 
   return (
-  <Form onSubmit={formSubmit}>
-    <Row>
-      <Col>
-        <Form.Label>Description</Form.Label>
-        <Form.Control
-        as="select"
-        onChange={event => setDescription(event.target.value)}
-        >
-          {descriptions.map((singleDesc, i) => <option key={i}>{singleDesc}</option>)}
-        </Form.Control>
-      </Col>
+  <>
+    <h2 className="homepage-title">Add New Expense</h2>
 
-      <Col>
-        <Form.Label>Amount</Form.Label>
-        <Form.Control
-        type="number"
-        step="0.01"
-        placeholder={amount}
-        onChange={event => setAmount(event.target.value)}
-        />
-      </Col>
+    <Form onSubmit={formSubmit}>
+      <Row>
+        <Col>
+          <Form.Label>Description</Form.Label>
+          <Form.Control
+          as="select"
+          onChange={event => setDescription(event.target.value)}
+          >
+            {descriptions.map((singleDesc, i) => <option key={i}>{singleDesc}</option>)}
+          </Form.Control>
+        </Col>
 
-      {/* this is where we conditionally render the button */}
-      <div className="mt-4">
-        {
-          isNewExpense
-          ?
-          <Button variant="primary" type="submit">
-            Add
-          </Button>
-          :
-          <div>
-            <Button
-            variant="danger"
-            style={{ marginRight: '4px'}}
-            onClick={() => DeleteExpense(dispatch, expense)}
-            >
-              Delete
+        <Col>
+          <Form.Label>Amount</Form.Label>
+          <Form.Control
+          type="number"
+          step="0.01"
+          placeholder={amount}
+          onChange={event => setAmount(event.target.value)}
+          />
+        </Col>
+
+        {/* this is where we conditionally render the button */}
+        <div className="mt-4">
+          {
+            isNewExpense
+            ?
+            <Button className="submit-button" variant="primary" type="submit">
+              Add
             </Button>
+            :
+            <div>
+              <Button
+              variant="danger"
+              style={{ marginRight: '4px'}}
+              onClick={() => DeleteExpense(dispatch, expense)}
+              >
+                Delete
+              </Button>
 
-            <Button
-            variant="success"
-            type="submit"
-            style={{ marginRight: '4px'}}
-            >
-              Save
-            </Button>
+              <Button
+              variant="success"
+              type="submit"
+              style={{ marginRight: '4px'}}
+              >
+                Save
+              </Button>
 
-            <Button
-            variant="default"
-            onClick={() => setIsEditing(false)}
-            style={{ marginRight: '4px'}}
-            >
-              Cancel
-            </Button>
-          </div>
-        }
-      </div>
-    </Row>
-  </Form>
+              <Button
+              variant="default"
+              onClick={() => setIsEditing(false)}
+              style={{ marginRight: '4px'}}
+              >
+                Cancel
+              </Button>
+            </div>
+          }
+        </div>
+      </Row>
+    </Form>
+  </>
   )
 }

@@ -11,8 +11,6 @@ const SignInPage = () => {
 
   const dispatch = useDispatch()
 
-
-
   const submitFunction = event => {
     event.preventDefault()
 
@@ -31,7 +29,7 @@ const SignInPage = () => {
       onSubmit={submitFunction}
       >
 
-        <h4 style={{ textAlign: 'center' }}>Welcome back!</h4>
+        <h4 style={{ textAlign: 'center' }}>Sign In to Continue!</h4>
 
         <InputGroup className="mb-3">
           <FormControl

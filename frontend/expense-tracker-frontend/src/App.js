@@ -8,6 +8,7 @@ import HomePage from "./components/HomePage";
 import SignInPage from "./components/SignInPage";
 import SignUpPage from "./components/SignUpPage";
 import StatisticsPage from "./components/StatisticsPage";
+import NotFound from "./components/NotFound";
 
 
 
@@ -33,7 +34,7 @@ const App = () => {
         <Route path="/signup" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignUpPage />)} />
         <Route path="/signin" render={() => (isLoggedIn ? <Redirect to='/' /> : <SignInPage />)} />
         <Route path="/statistics" render={() => (isLoggedIn ? <StatisticsPage /> : <SignInPage />)} />
-        <Route render={() => <h2>Page not found</h2>} />
+        <Route render={() => <NotFound />} />
       </Switch>
     </BrowserRouter>
   )

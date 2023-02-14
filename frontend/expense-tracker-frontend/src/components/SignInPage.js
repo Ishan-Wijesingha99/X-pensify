@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormControl, InputGroup, Button } from "react-bootstrap";
+import { Form, InputGroup, Button, FormControl } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { SignIn } from "../services/authentication";
 
@@ -33,19 +33,20 @@ const SignInPage = () => {
 
         <InputGroup className="mb-4">
           <FormControl
+          type="text"
           className="form-input-class"
           placeholder="Username"
           onChange={event => setUsername(event.target.value)}
-          ></FormControl>
+          />
         </InputGroup>
 
         <InputGroup className="mb-4">
           <FormControl
+          type="password"
           className="form-input-class"
           placeholder="Password"
-          type="password"
           onChange={event => setPassword(event.target.value)}
-          ></FormControl>
+          />
         </InputGroup>
 
         <Button

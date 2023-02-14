@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <Nav className="navbar navcss">
       
-      <h1 className="nav-title">X-pensify</h1>
+      <h1 className="nav-title" style={{ fontFamily: 'Pacifico, cursive' }}>X-pensify</h1>
 
       {
         isLoggedIn

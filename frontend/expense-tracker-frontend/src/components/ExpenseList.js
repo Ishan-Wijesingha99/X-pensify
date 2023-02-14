@@ -63,7 +63,7 @@ export const ExpenseList = () => {
 
   return (
     <>
-      <h2>Your Expenses</h2>
+      <h2 className="expense-list-title">Your Expenses</h2>
 
       {expensesArray.map(object => (
         <div key={object.id} className="mb-4">

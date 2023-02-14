@@ -41,8 +41,6 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
 
   return (
   <>
-    <h2 className="homepage-title">Add New Expense</h2>
-
     <Form onSubmit={formSubmit}>
       <Row>
         <Col>
@@ -65,19 +63,23 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
           />
         </Col>
 
-        {/* this is where we conditionally render the button */}
+        {/* this is where we conditionally render which button, remember, we are using this component for adding a new expense at the top but also editing an expense in the expense list */}
         <div className="mt-4">
           {
             isNewExpense
             ?
-            <Button className="submit-button" type="submit">
+            <Button
+            className="submit-button"
+            type="submit"
+            disabled = { amount <= 0 }
+            >
               Add
             </Button>
             :
             <div>
               <Button
               variant="danger"
-              style={{ marginRight: '4px'}}
+              style={{ marginRight: '0.5rem'}}
               onClick={() => DeleteExpense(dispatch, expense)}
               >
                 Delete
@@ -86,13 +88,14 @@ export const ExpenseForm = ({ expense, setIsEditing }) => {
               <Button
               variant="success"
               type="submit"
-              style={{ marginRight: '4px'}}
+              style={{ marginRight: '0.5rem'}}
+              disabled = { amount <= 0 }
               >
                 Save
               </Button>
 
               <Button
-              variant="default"
+              variant="secondary"
               onClick={() => setIsEditing(false)}
               style={{ marginRight: '4px'}}
               >

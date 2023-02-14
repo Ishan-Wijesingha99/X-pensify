@@ -10,6 +10,9 @@ const HomePage = () => {
 
       <ToastContainer />
 
+      <h2 className="homepage-title">
+      Add New Expense
+      </h2>
       <ExpenseForm />
 
       <hr style={{ border: '1px solid grey', marginBottom: '3rem' }}/>

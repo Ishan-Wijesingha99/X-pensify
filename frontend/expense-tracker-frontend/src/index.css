@@ -82,10 +82,18 @@ body {
 
 .sign-in-button, .sign-up-button {
   background-color: rgb(66, 119, 199) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .sign-in-button:hover, .sign-up-button:hover {
   background-color: #3c66a5 !important;
+}
+
+.form-err-message {
+  color: #dc3545;
+  text-align: center;
+  /* margin-bottom: 1rem; */
 }
 
 /* statistics page */

@@ -14,6 +14,7 @@ const SignUpPage = () => {
 
   const [passwordsNotMatching, setPasswordsNotMatching] = useState(false)
   const [usernameAlreadyExists, setUsernameAlreadyExists] = useState(false)
+  const [signUpFailed, setSignUpFailed] = useState(false)
 
   const dispatch = useDispatch()
 
@@ -33,8 +34,11 @@ const SignUpPage = () => {
       }).then(res => {
         if(res === "Username already exists") {
           setUsernameAlreadyExists(true)
+        } else if(res === "Sign Up Failed") {
+          setSignUpFailed(true)
         } else {
           setUsernameAlreadyExists(false)
+          setSignUpFailed(false)
         }
       })
 
@@ -50,7 +54,7 @@ const SignUpPage = () => {
 
         <h4 className="create-an-account">Create an Account to Use X-pensify!</h4>
 
-        <InputGroup className="mb-4">
+        <InputGroup className="mt-4">
           <FormControl
           type="text"
           className="form-input-class"
@@ -62,10 +66,10 @@ const SignUpPage = () => {
           onChange={event => setUsername(event.target.value)}
           />
         </InputGroup>
-        {errors.uname && (<p>Must be at least 5 characters</p>)}
+        {errors.uname && (<p className="form-err-message">Must be at least 5 characters</p>)}
 
 
-        <InputGroup className="mb-4">
+        <InputGroup className="mt-4">
           <FormControl
           type="text"
           className="form-input-class"
@@ -77,10 +81,10 @@ const SignUpPage = () => {
           onChange={event => setEmail(event.target.value)}
           />
         </InputGroup>
-        {errors.email && (<p>Must be a valid email address</p>)}
+        {errors.email && (<p className="form-err-message">Must be a valid email address</p>)}
 
 
-        <InputGroup className="mb-4">
+        <InputGroup className="mt-4">
           <FormControl
           type="password"
           className="form-input-class"
@@ -92,10 +96,10 @@ const SignUpPage = () => {
           onChange={event => setPassword(event.target.value)}
           />
         </InputGroup>
-        {errors.pword && (<p>Must be at least 5 characters</p>)}
+        {errors.pword && (<p className="form-err-message">Must be at least 5 characters</p>)}
 
 
-        <InputGroup className="mb-4">
+        <InputGroup className="mt-4">
           <FormControl
           type="password"
           className="form-input-class"
@@ -103,7 +107,7 @@ const SignUpPage = () => {
           onChange={event => setConfirmPassword(event.target.value)}       
           />
         </InputGroup>
-        {passwordsNotMatching && (<p>Passwords not matching</p>)}
+        {passwordsNotMatching && (<p className="form-err-message">Passwords not matching</p>)}
 
 
         <Button
@@ -114,7 +118,8 @@ const SignUpPage = () => {
           Sign Up
         </Button>
 
-        {usernameAlreadyExists && (<p>Username already exists</p>)}
+        {usernameAlreadyExists && (<p className="form-err-message">Username already exists</p>)}
+        {signUpFailed && (<p className="form-err-message">Sign Up failed</p>)}
 
       </Form>
     </div>

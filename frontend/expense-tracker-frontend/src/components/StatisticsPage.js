@@ -21,7 +21,7 @@ const StatisticsPage = () => {
   const [legendData, setLegendData] = useState([])
 
   let amountsArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-  const descriptions = ['Rent', 'Mortgage', 'Transport', 'Food', 'Utilities', 'Insurance', 'Medical/Healthcare', 'Investments', 'Debt Payments', 'Gifts', 'Subscriptions', 'Recreation/Entertainment', 'Miscellaneous', 'Grooming/Self-care', 'Fuel', 'Education', 'Pets', 'Retirement Contributions', 'Clothing', 'Household Supplies/Items', 'Charity']
+  const descriptions = ['Rent', 'Mortgage', 'Transport', 'Food', 'Utilities', 'Insurance', 'Medical/Healthcare', 'Investments', 'Debt Payments', 'Gifts', 'Subscriptions', 'Recreation', 'Miscellaneous', 'Grooming/Self-care', 'Fuel', 'Education', 'Pets', 'Retirement Contributions', 'Clothing', 'Household Items', 'Charity']
 
   let pieDataArray = []
   let legendDataArray = []
@@ -80,7 +80,7 @@ const StatisticsPage = () => {
   return (
     <>
       <div className="stats-page-div">
-        
+  
         <h4 className="stats-page-title">Expenses Pie Chart</h4>
 
         {/* the pie chart */}
@@ -102,15 +102,15 @@ const StatisticsPage = () => {
 
       {/* the legend */}
       <div className="legend">
-          {
-            legendData.map((object, i) => {
-              return (
-                <div style={{ display: 'flex' }} key={i}>
-                  <p style={{ marginRight: '1rem', marginLeft: '1rem' }}>{object.number}: {object.caption}</p>
-                </div>
-              )
-            })
-          }
+        {
+          legendData.map((object, i) => {
+            return (
+              <div style={{ display: 'flex' }} key={i}>
+                <p style={{ marginRight: '1rem', marginLeft: '1rem' }}>{object.number}: {object.caption}</p>
+              </div>
+            )
+          })
+        }
       </div>
     </>
   )
